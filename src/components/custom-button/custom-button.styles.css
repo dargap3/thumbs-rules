@@ -1,0 +1,27 @@
+.custom-button {
+    height: 2rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border: 1px solid var(--clr-light);
+    color: var(--clr-light);
+    background: transparent;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    color: var(--clr-dark);
+    background: var(--clr-light);
+}
+
+.reversed {
+    height: 3rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    border: 2px solid var(--clr-dark);
+    color: var(--clr-dark);
+}
+
+.reversed:hover {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+}

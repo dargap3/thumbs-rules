@@ -1,0 +1,137 @@
+/* Hero  Section */
+
+.hero {
+    position: relative;
+    top: -15vh;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: url(https://i.postimg.cc/xC9C2C7K/pope.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__container {
+    position: relative;
+    top: 20vh;
+    width: 90%;
+}
+
+.hero__card {
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(16px);
+    padding: 2em 3em 2em 2em;
+    max-width: 500px;
+}
+
+.hero__title span {
+    font-size: 0.875rem;
+}
+
+.hero__container--link {
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.wikipedia {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+}
+
+.hero__link {
+    text-decoration: underline;
+}
+
+.hero__thumbs {
+    height: 10vh;
+    max-width: 500px;
+}
+
+.hero__thumb--up,
+.hero__thumb--down {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero__thumb--up {
+    background-color: var(--clr-accent-up2);
+}
+
+.hero__thumb--up:hover {
+    background-color: var(--clr-accent-up1);
+}
+
+.hero__thumb--down {
+    background-color: var(--clr-accent-down2);
+}
+
+.hero__thumb--down:hover {
+    background-color: var(--clr-accent-down1);
+}
+
+.hero__thumb--up .thumb--up,
+.hero__thumb--down .thumb--down {
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+}
+
+.hero__footer {
+    position: absolute;
+    bottom: 0;
+    height: 7.5vh;
+    width: 100%;
+}
+
+.hero__footer div {
+    height: 100%;
+}
+
+.hero__footer--closing {
+    width: 35%;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    font-size: .875rem;
+}
+
+.hero__footer--arrow-right {
+    position: absolute;
+    left: 35%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid rgba(0, 0, 0, .3);
+    transform: scale(0.2);
+    transform-origin: 0;
+}
+
+.hero__footer--days {
+    font-size: 2.3125rem;
+    flex-grow: 1;
+    color: var(--clr-dark);
+    background-color: hsla(0, 0%, 100%, .7);
+    padding-left: 2rem;
+}
+
+.hero__footer--closing,
+.hero__footer--days {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .hero__card {
+        max-height: 50%;
+    }
+    .hero__title {
+        padding-bottom: 1rem;
+    }
+}

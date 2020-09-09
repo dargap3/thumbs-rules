@@ -1,0 +1,19 @@
+.thumb {
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border: none;
+}
+
+.thumb--up {
+    background: #1cbbb4;
+}
+
+.thumb--down {
+    background: #ffac1d;
+    transform: rotate(180deg);
+}
+
+.thumb--active {
+    outline: white solid 2px;
+}

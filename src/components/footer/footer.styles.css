@@ -1,0 +1,43 @@
+.footer {
+    height: 10vh;
+    font-weight: lighter;
+    color: var(--clr-dark);
+    border-top: 1px dotted var(--clr-dark);
+}
+
+.politics-list {
+    width: 70%;
+    color: var(--clr-dark);
+}
+
+.politics__link {
+    color: inherit;
+}
+
+.politics__link:hover {
+    text-decoration: underline;
+}
+
+.social-media-list {
+    width: 20%;
+}
+
+.facebook,
+.twitter {
+    width: 2rem;
+    height: 2rem;
+}
+
+.facebook svg {
+    fill: blue;
+}
+
+.facebook:hover {
+    fill: blue;
+}
+
+@media (min-width: 850px) {
+    .politics-list {
+        width: 40%;
+    }
+}
